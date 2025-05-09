@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Tagesschrift&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Food Corner</title>
+
+</head>
+<body>
+    
+    <div class="main">
+        <div>
+            <video autoplay muted loop>
+                <source src="food_vdo.mp4" type="video/mp4" >
+            </video>
+        </div>
+
+        <nav class="nav">
+            <div class="tagesschrift-regular">
+                <h1>Food Court &nbsp;<i class="fa-solid fa-utensils"></i></h1>
+            </div>
+            <div class="comic-relief-regular">
+                <a class="navlink" href="#home">Home</a>
+                <a class="navlink" href="#about">About</a>
+                <a class="navlink" href="#contact">Contact</a>
+            </div>
+            <div>
+                <button type="button" class="rButton">Register</button>
+                <button type="button" class="lButton">Login</button>
+            </div>
+        </nav>
+
+        <div class="welcome" id="home">
+            <h1 class="wel_come">Welcome to</h1>
+            <h1 class="food_court">Food Court</h1> 
+        </div>
+    </div>
+
+    <section id="content">
+        <h1>
+            Welcome to Food Court
+        </h1>
+        <p>
+            Welcome to Food Court – where taste meets tradition!
+            Step into a world of flavors and unforgettable meals.
+            Satisfy your cravings, one delicious bite at a time.
+            Experience a fusion of cuisines under one roof.
+            Fresh food, fast service, and full satisfaction await you.
+            Your go-to place for mouthwatering meals and memories.
+            Delight your senses with our diverse culinary offerings.
+            Good food. Good vibes. Great company.
+            Bringing people together over food they love.
+            Welcome to your favorite food destination — every meal is a celebration!
+       </p>
+       <div class="btn">
+        <button type="submit" class="join_btn">Join Now</button>
+
+       </div>
+
+       <div class="sal">
+            <div class="imgBox sal1">
+                <img src="salad1.jpg" alt="salad1" />
+                <div class="label">Italian Salad</div>
+            </div>
+            <div class="imgBox sal3">
+                <img src="fruit.webp" alt="salad3" />
+                <div class="label">Fruit Platter</div>
+            </div>
+            <div class="imgBox sal2">
+                <img src="salad2.webp" alt="salad2" />
+                <div class="label">Avocado Salad</div>
+            </div>
+      </div>
+    </section >
+
+    <section id="about" class="about_section">
+        <div class="about_card">
+            <img src="courtimg.jpg" alt="food_court" class="about_img"/>
+                <div class="about_content">
+                    <h1>About Us</h1>
+                    <p>
+                        Welcome to Food Court – your ultimate destination for delicious, hygienic, and freshly prepared meals. 
+                        Our food court is more than just a place to eat – it’s a vibrant hub where food lovers gather to experience global flavors.
+                        From crispy snacks to hearty meals, we offer a wide variety of cuisines to suit every taste. 
+                        Every dish is made with carefully selected ingredients, emphasizing quality and taste.
+                        Our mission is to deliver exceptional food in a warm, friendly atmosphere. 
+                        Whether you're here for a quick bite or a family outing, Food Court promises an experience worth savoring.
+                    </p>
+                </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact_card">
+            <div class="contact_info">
+                <h1>Contact Us</h1>
+                <p>
+                    We'd love to hear from you! Whether you have questions, feedback, or just want to say hello, feel free to reach out. 
+                    Our team is always here to help and ensure you have the best experience possible at Food Court.
+                </p>
+            </div>
+            <div class="contact_form">
+                <form action="submit" method="post">
+                    <div class="name_row">
+                        <div>
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname" name="fname" class="contact_form1" placeholder="Enter name" required/> 
+                        </div>
+                        <div>
+                            <label for="lname">Last Name:</label>
+                            <input type="text" id="lname" name="lname" class="contact_form1" placeholder="Enter name" required/> 
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter email" required/> 
+                    </div>
+                    <div>
+                        <label for="number">Phone number:</label>
+                        <input type="number" id="number" name="number" placeholder="+91 0000000000" required/> 
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Write your message here" title="Your message"></textarea> 
+                    </div>
+                    <div>
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer_contact">
+            <p><strong>Contact Us:</strong></p>
+            <p>Email: support@foodcourt.com</p>
+            <p>Phone: +91 9876543210</p>
+        </div>
+
+        <div class="footer_message">
+            <p>Thank you for visiting Food Court. We hope you had a great experience!</p>
+        </div>
+      
+        <div class="footer_credit">
+            <p>&copy; 2025 Food Court. Created by <span class="creator_name">kavita raghvani</span>.</p>
+        </div>
+      </footer>
+</body>
+</html>
