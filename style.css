@@ -4,20 +4,18 @@
     box-sizing: border-box;
 
 }
-
 body{
-    width: 100vw;
+    width: 100%;
     height: auto;
     overflow-x: hidden;
-
 }
-
 .main{
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
- }
+}
 
+/* Navbar start*/
 video{
     position: absolute;
     width: 100%;
@@ -29,21 +27,17 @@ video{
 }
 .nav{
     position: fixed;
-    top: 15px;
-    left: 0;
-    right: 0;
+    top: 20px;
+    left: 20px;
+    right: 20px;
     z-index: 1000;
     background-color: rgba(125, 48, 15, 0.647);
-    padding: 15px;
+    padding: 15px; 
     border-radius: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    width: 95%;
-
 } 
-  
 .nav h1{
     padding: 0px 10px 0px 10px;
     font-size: 20px;
@@ -51,43 +45,51 @@ video{
     display: flex;
     align-content: center;
 }
-
 .tagesschrift-regular {
     font-family: "Tagesschrift", system-ui;
     font-weight: 600;
     font-style: normal;
-}
-  
+} 
 .navlink{
-    padding: 0px 10px 0px 10px;
+    padding: 10px;
     text-decoration: none;
     font-size: 17px;
     color: rgb(255, 253, 253);
     /* font-weight: bold; */
 }
-
 .comic-relief-regular {
     font-family: "Comic Relief", system-ui;
     font-weight: 400;
     font-style: normal;
-}
-  
+} 
 .rButton{
     background-color: #c70202e7;
     color:white;
     padding: 7px;
     border: none; 
     border-radius: 3px;
+    cursor: pointer;
 }
-
 .lButton{
     background-color: #2F2FAD;
     color: white;
     padding: 7px;
     border: none;
     border-radius: 3px;
+    cursor: pointer;
 }
 
+.rButton:hover{
+    background-color: rgb(146, 19, 19);
+}
+
+.lButton:hover{
+    background-color: rgb(30, 30, 128);
+}
+
+/* Navbar end */
+
+/* welcome text on video start */
 .welcome{
     position: absolute;
     top: 50%;
@@ -106,31 +108,44 @@ video{
     font-size: 45px;
     padding: 5px;
 }
+/* welcome text on video end */
 
+/* Welcome page start*/
+.content_section{
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+.content_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
 #content h1{
-    padding: 50px 20px 20px 20px;
+    padding: 15px;
     font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
 }
-
 #content p{
-    margin:  5px 50px 5px 50px;
-    /* padding: 20px; */
-    font-size: 15px;
+    padding: 15px;
+    font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
 }
-
 .btn{
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .join_btn {
     padding: 10px 15px 10px 15px;
     color: white;
@@ -141,51 +156,48 @@ video{
     font-size: 16px;
     cursor: pointer;
 }
-
 .join_btn:hover {
     background-color: #08088b;
 }
-
+.imgBox{
+    position: relative;
+    overflow: hidden;
+}
 .sal{
-    padding: 20px 0px 0px 0px;
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     align-content: center;
     gap: 10px;
 }
-
-.imgBox{
-    position: relative;
-    overflow: hidden;
-}
-
 .sal1, .sal2{
     height: 270px;
     width: 25%;
-}
+    margin-inline: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
-.sal1:hover{
-    border-radius: 10px;
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.sal2:hover{
-    border-radius: 10px;
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.sal3:hover{
-    border-radius: 10px;
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 .sal3{
     height: 270px;
     width: 50%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.sal1:hover,
+.sal3:hover,
+.sal2:hover{
+    border-radius: 8px;
+    margin-block: -5px;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    position: relative;
+    flex-grow: 2x;
+}
+.sal1:hover img,
+.sal3:hover img,
+.sal2:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out  ;
 }
 
 .imgBox img {
@@ -193,9 +205,8 @@ video{
     height: 100%;
     object-fit: cover;
     display: block;
-    border-radius: 10px;
+    border-radius: 8px;
 }
-
 .label {
     position: absolute;
     bottom: 2px;
@@ -210,11 +221,12 @@ video{
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 .imgBox:hover{
     flex-grow: 2px;
 }
+/* Welcome page end */
 
+/* About section start */
 .about_section {
     display: flex;
     justify-content: center;
@@ -222,14 +234,6 @@ video{
     background-color: #f5f5f5;
     text-align: center;
 }
-
-.section_title {
-    font-size: 28px;
-    margin-bottom: 40px;
-    font-weight: bold;
-    color: #222;
-  }
-
 .about_card {
     display: flex;
     justify-content: center;
@@ -240,41 +244,36 @@ video{
     align-items: center;
     flex-wrap: wrap;
 }
-
 .about_img {
   width: 45%;
   height: 400px;
   border-radius: 10px;
   object-fit: cover;
 }
-
 .about_img:hover{
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
-
 .about_content {
   width: 50%;
   min-width: 280px;
   color: #333;
   text-align: left;
 }
-
 .about_content h1 {
     font-size: 28px;
     margin-bottom: 40px;
     display: flex;
     justify-content: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-
+}
 .about_content p {
   font-size: 16px;
   margin-left: 30px;
   line-height: 1.6;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 .about_section {
     display: flex;
     justify-content: center;
@@ -282,23 +281,22 @@ video{
     background-color: #f5f5f5;
     text-align: center;
 }
+/* About end */
 
+/* Contact start */
 #contact{
     padding: 50px 10%;
     background-color: #f5f5f5;
 }
-  
 .contact_card{
     display: flex;
     gap: 150px;
     flex-wrap: wrap;
 }
-
 .contact_info {
     flex: 1;
     min-width: 200px;
 }
-
 .contact_info h1 {
   font-size: 28px;
   margin-top: 50px;
@@ -307,14 +305,15 @@ video{
   justify-content: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 .contact_info p {
   font-size: 16px;
   line-height: 1.6;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 .contact_form{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    padding: 20px;
     flex: 1;
     min-width: 300px;
 }
@@ -342,8 +341,9 @@ video{
     height: 50px;
 }
 .contact_form button {
-    padding: 10px 20px;
+    padding: 10px 25px;
     background-color: #b4462a;
+    font-size: 15px;
     color: white;
     border: none;
     border-radius: 6px;
@@ -360,7 +360,9 @@ video{
 .name_row div{
     width: 48%;
 }
+/* Contact page end */
 
+/* Footer */
 .footer {
     height: 70px; 
     display: flex;
@@ -371,7 +373,14 @@ video{
     color: white;
 }
 
+.footer p{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
 .footer_message, .footer_contact, .footer_credit {
     font-size: 14px;
     margin: 0; 
 }
+/* Footer end */

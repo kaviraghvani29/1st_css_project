@@ -18,24 +18,26 @@
     <div class="main">
         <div>
             <video autoplay muted loop>
-                <source src="food_vdo.mp4" type="video/mp4" >
+                <source src="food_vdo.mp4" type="video/mp4"/>
             </video>
         </div>
 
-        <nav class="nav">
-            <div class="tagesschrift-regular">
-                <h1>Food Court &nbsp;<i class="fa-solid fa-utensils"></i></h1>
-            </div>
-            <div class="comic-relief-regular">
-                <a class="navlink" href="#home">Home</a>
-                <a class="navlink" href="#about">About</a>
-                <a class="navlink" href="#contact">Contact</a>
-            </div>
-            <div>
-                <button type="button" class="rButton">Register</button>
-                <button type="button" class="lButton">Login</button>
-            </div>
-        </nav>
+        <div>
+            <nav class="nav">
+                <div class="tagesschrift-regular">
+                    <h1>Food Court &nbsp;<i class="fa-solid fa-utensils"></i></h1>
+                </div>
+                <div class="comic-relief-regular">
+                    <a class="navlink" href="#home">Home</a>
+                    <a class="navlink" href="#about">About</a>
+                    <a class="navlink" href="#contact">Contact</a>
+                </div>
+                <div>
+                    <button type="submit" class="rButton">Register</button>
+                    <button type="submit" class="lButton">Login</button>
+                </div>
+            </nav>
+        </div>
 
         <div class="welcome" id="home">
             <h1 class="wel_come">Welcome to</h1>
@@ -43,41 +45,44 @@
         </div>
     </div>
 
-    <section id="content">
-        <h1>
-            Welcome to Food Court
-        </h1>
-        <p>
-            Welcome to Food Court – where taste meets tradition!
-            Step into a world of flavors and unforgettable meals.
-            Satisfy your cravings, one delicious bite at a time.
-            Experience a fusion of cuisines under one roof.
-            Fresh food, fast service, and full satisfaction await you.
-            Your go-to place for mouthwatering meals and memories.
-            Delight your senses with our diverse culinary offerings.
-            Good food. Good vibes. Great company.
-            Bringing people together over food they love.
-            Welcome to your favorite food destination — every meal is a celebration!
-       </p>
-       <div class="btn">
-        <button type="submit" class="join_btn">Join Now</button>
+    <section id="content" class="content_section">
+        <div class="content_card">
+            <h1>
+                Welcome to Food Court
+            </h1>
+            <p>
+                Welcome to Food Court – where taste meets tradition!
+                Step into a world of flavors and unforgettable meals.
+                Satisfy your cravings, one delicious bite at a time.
+                Experience a fusion of cuisines under one roof.
+                Fresh food, fast service, and full satisfaction await you.
+                Your go-to place for mouthwatering meals and memories.
+                Delight your senses with our diverse culinary offerings.
+                Good food. Good vibes. Great company.
+                Bringing people together over food they love.
+                Welcome to your favorite food destination — every meal is a celebration!
+            </p>
+            <div class="btn">
+                <button type="submit" class="join_btn">Join Now</button>
 
-       </div>
+            </div>
 
-       <div class="sal">
-            <div class="imgBox sal1">
-                <img src="salad1.jpg" alt="salad1" />
-                <div class="label">Italian Salad</div>
+            <div class="sal">
+                <div class="imgBox sal1">
+                    <img src="salad1.jpg" alt="salad1" />
+                    <div class="label">Italian Salad</div>
+                </div>
+                <div class="imgBox sal3">
+                    <img src="fruit.webp" alt="salad3" />
+                    <div class="label">Fruit Platter</div>
+                </div>
+                <div class="imgBox sal2">
+                    <img src="salad2.webp" alt="salad2" />
+                    <div class="label">Avocado Salad</div>
+                </div>
             </div>
-            <div class="imgBox sal3">
-                <img src="fruit.webp" alt="salad3" />
-                <div class="label">Fruit Platter</div>
-            </div>
-            <div class="imgBox sal2">
-                <img src="salad2.webp" alt="salad2" />
-                <div class="label">Avocado Salad</div>
-            </div>
-      </div>
+        </div>
+
     </section >
 
     <section id="about" class="about_section">
@@ -111,7 +116,7 @@
                     <div class="name_row">
                         <div>
                             <label for="fname">First Name:</label>
-                            <input type="text" id="fname" name="fname" class="contact_form1" placeholder="Enter name" required/> 
+                            <input type="text" id="fname" name="fname" placeholder="Enter name" required/> 
                         </div>
                         <div>
                             <label for="lname">Last Name:</label>
